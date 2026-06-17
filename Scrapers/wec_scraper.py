@@ -4,7 +4,6 @@ import requests
 
 # for storing result as file
 import json
-import os
 
 RACES = {
     "imola": "https://www.fiawec.com/en/race/6-hours-of-imola-2026",
