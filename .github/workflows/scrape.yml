@@ -45,7 +45,17 @@ jobs:
 
           git commit -m "Update WEC schedule data"
 
+          echo "--- Before fetch ---"
+          git log --oneline -3
+
           git fetch origin main
+
+          echo "--- Origin main log ---"
+          git log --oneline -3 origin/main
+
           git rebase origin/main
+
+          echo "--- After rebase ---"
+          git log --oneline -3
 
           git push origin HEAD:main
