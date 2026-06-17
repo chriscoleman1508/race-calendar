@@ -38,7 +38,7 @@ jobs:
           git config user.email "github-actions@github.com"
           git add data/wec.json
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "::notice::No changes to commit"
             exit 0
           fi
           git commit -m "Update WEC schedule data"
