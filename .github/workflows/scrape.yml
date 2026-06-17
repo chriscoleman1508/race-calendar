@@ -42,8 +42,17 @@ jobs:
             exit 0
           fi
           git commit -m "Update WEC schedule data"
-          git pull --rebase origin main
-          git push origin HEAD:main || {
-            git pull --rebase origin main
-            git push origin HEAD:main
+          git pull --rebase origin main || {
+            echo "::error::Failed to rebase onto origin/main"
+            exit 1
           }
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main || {
+              echo "::error::Failed to rebase onto origin/main for retry"
+              exit 1
+            }
+            git push origin HEAD:main || {
+              echo "::error::Failed to push scraped data after retry"
+              exit 1
+            }
+          fi
