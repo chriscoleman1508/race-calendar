@@ -35,4 +35,4 @@ jobs:
           git add data/wec.json
           git pull
           git commit -m "Update WEC schedule data" || echo "No changes to commit"
-          git push
+          git push -f origin master
