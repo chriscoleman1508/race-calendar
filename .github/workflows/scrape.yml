@@ -43,4 +43,7 @@ jobs:
           fi
           git commit -m "Update WEC schedule data"
           git pull --rebase origin main
-          git push origin HEAD:main
+          git push origin HEAD:main || {
+            git pull --rebase origin main
+            git push origin HEAD:main
+          }
