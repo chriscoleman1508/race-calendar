@@ -1,8 +1,6 @@
 # for web scraping
 from bs4 import BeautifulSoup
-
-# for getting timezones - contributed by claude
-from playwright.sync_api import sync_playwright
+import requests
 
 # for storing result as file
 import json
@@ -20,26 +18,9 @@ RACES = {
 }
 
 def scrape_sessions(race_url):
-    # code from claude to update website with current timezones
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)  # headless=False to watch it happen
-        page = browser.new_page()
-        page.goto(race_url)
-
-        # Wait for the page to fully load
-        page.wait_for_load_state("networkidle")
-
-        # Click the timezone button — inspect the button in Chrome DevTools to get the right selector
-        page.click("text=Switch to my timezone")  # 👈 replace with the actual selector
-
-        # Wait for the times to update after the click
-        page.wait_for_timeout(1000)
-
-        # Now grab the updated HTML and parse it like before
-        html = page.content()
-        browser.close()
-
-    soup = BeautifulSoup(html, 'html.parser')
+    headers = {"User-Agent": "Mozilla/5.0"}
+    response = requests.get(race_url, headers=headers)
+    soup = BeautifulSoup(response.text, 'html.parser')
 
     # line contributed by claude
     days = soup.find_all("div", {"class": lambda c: c and "g-col-12" in c and "border-top" in c})
@@ -51,21 +32,20 @@ def scrape_sessions(race_url):
         session_names = day.find_all("div", {"class": "fw-bold lh-sm"})
         for session in session_names:
             sessions.append(session.text)
-        times = []
-        time_names = day.find_all("div", {"class": "text-primary fst-italic"})
-        for time in time_names:
-            time = time.text
-            time = time.split()
-            if len(time) > 1:
-                time = time[0] + " " + time[1]
-            else:
-                time = time[0]
-            times.append(time)
-        day_info = dict(zip(sessions, times))
+        
+        timestamps = []
+        time_spans = day.find_all("span", {"data-timestamp": True})
+        for span in time_spans:
+            timestamps.append(int(span["data-timestamp"]))
+
+        if len(timestamps) == len(sessions):
+            day_info = dict(zip(sessions, timestamps))
+        else:
+            day_info = {name: "TBC" for name in sessions}
 
         # these 2 lines by claude
         day_name = day.find("div", {"class": lambda c: c and "fw-extrabold" in c and "fs-5" in c}).text
-        result[day_name] = day_info  # use the day name as the key, add to result
+        result[day_name] = day_info
 
     print(result)
     return result
@@ -80,8 +60,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Failed on {key}: {e}")
 
-    os.makedirs("data", exist_ok=True)
-    with open("data/wec.json", "w") as f:
+    with open("Website/data/wec.json", "w") as f:
         json.dump(all_races, f, indent=2)
 
-    print("Saved to data/wec.json")
+    print("Saved to Website/data/wec.json")

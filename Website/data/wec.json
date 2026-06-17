@@ -1,70 +1,70 @@
 {
   "imola": {
     "April 17th": {
-      "Free Practice 1": "08:15 AM",
-      "Free Practice 2": "01:15 PM"
+      "Free Practice 1": 1776413700,
+      "Free Practice 2": 1776431700
     },
     "April 18th": {
-      "Free Practice 3": "08:30 AM",
-      "Qualifying - LMGT3": "12:30 PM",
-      "Hyperpole - LMGT3": "12:50 PM",
-      "Qualifying - HYPERCAR": "01:10 PM",
-      "Hyperpole - HYPERCAR": "01:30 PM"
+      "Free Practice 3": 1776501000,
+      "Qualifying - LMGT3": 1776515400,
+      "Hyperpole - LMGT3": 1776516600,
+      "Qualifying - HYPERCAR": 1776517800,
+      "Hyperpole - HYPERCAR": 1776519000
     },
     "April 19th": {
-      "Race": "11:00 AM"
+      "Race": 1776596400
     }
   },
   "spa": {
     "May 7th": {
-      "Free Practice 1": "09:00 AM",
-      "Free Practice 2": "01:40 PM"
+      "Free Practice 1": 1778144400,
+      "Free Practice 2": 1778161200
     },
     "May 8th": {
-      "Free Practice 3": "08:10 AM",
-      "Qualifying - LMGT3": "12:30 PM",
-      "Hyperpole - LMGT3": "12:55 PM",
-      "Qualifying - HYPERCAR": "01:20 PM",
-      "Hyperpole - HYPERCAR": "01:45 PM"
+      "Free Practice 3": 1778227800,
+      "Qualifying - LMGT3": 1778243400,
+      "Hyperpole - LMGT3": 1778244900,
+      "Qualifying - HYPERCAR": 1778246400,
+      "Hyperpole - HYPERCAR": 1778247900
     },
     "May 9th": {
-      "Race": "12:00 PM"
+      "Race": 1778328000
     }
   },
   "le_mans": {
     "June 10th": {
-      "Free Practice 1": "12:00 PM",
-      "Qualifying - LMP2 & LMGT3": "04:45 PM",
-      "Qualifying - HYPERCAR": "05:30 PM",
-      "Free Practice 2": "08:00 PM"
+      "Free Practice 1": 1781092800,
+      "Qualifying - LMP2 & LMGT3": 1781109900,
+      "Qualifying - HYPERCAR": 1781112600,
+      "Free Practice 2": 1781121600
     },
     "June 11th": {
-      "Free Practice 3": "12:45 PM",
-      "Hyperpole 1 - LMP2 & LMGT3": "06:00 PM",
-      "Hyperpole 2 - LMP2 & LMGT3": "06:35 PM",
-      "Hyperpole 1 - HYPERCAR": "07:05 PM",
-      "Hyperpole 2 - HYPERCAR": "07:40 PM",
-      "Free Practice 4": "09:00 PM"
+      "Free Practice 3": 1781181900,
+      "Hyperpole 1 - LMP2 & LMGT3": 1781200800,
+      "Hyperpole 2 - LMP2 & LMGT3": 1781202900,
+      "Hyperpole 1 - HYPERCAR": 1781204700,
+      "Hyperpole 2 - HYPERCAR": 1781206800,
+      "Free Practice 4": 1781211600
     },
     "June 13th": {
-      "Warm-up": "10:00 AM",
-      "Race": "02:00 PM"
+      "Warm-up": 1781344800,
+      "Race": 1781359200
     }
   },
   "brazil": {
     "July 10th": {
-      "Free Practice 1": "09:00 AM",
-      "Free Practice 2": "01:50 PM"
+      "Free Practice 1": 1783674000,
+      "Free Practice 2": 1783691400
     },
     "July 11th": {
-      "Free Practice 3": "08:10 AM",
-      "Qualifying - LMGT3": "12:30 PM",
-      "Hyperpole - LMGT3": "12:50 PM",
-      "Qualifying - HYPERCAR": "01:25 PM",
-      "Hyperpole - HYPERCAR": "01:45 PM"
+      "Free Practice 3": 1783757400,
+      "Qualifying - LMGT3": 1783773000,
+      "Hyperpole - LMGT3": 1783774200,
+      "Qualifying - HYPERCAR": 1783776300,
+      "Hyperpole - HYPERCAR": 1783777500
     },
     "July 12th": {
-      "Race": "09:30 AM"
+      "Race": 1783848600
     }
   },
   "cota": {
