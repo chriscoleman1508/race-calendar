@@ -1,5 +1,5 @@
+# for web scraping
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
 
 # for getting timezones - contributed by claude
 from playwright.sync_api import sync_playwright

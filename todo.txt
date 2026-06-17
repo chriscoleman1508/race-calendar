@@ -1,6 +1,5 @@
 - ask claude how to load json into html
 - ask claude to generate a pretty readme
-- ask claude to change it so it gets the timezone of the race and changes to the timezone of the user on the frontend
 - develop website to look nice
 - add f1
 - add imsa
