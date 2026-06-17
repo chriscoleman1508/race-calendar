@@ -5,6 +5,10 @@ on:
     - cron: "0 6 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: scrape-wec-schedule
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -33,6 +37,24 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/wec.json
-          git pull
-          git commit -m "Update WEC schedule data" || echo "No changes to commit"
-          git push -f origin master
+          if git diff --staged --quiet; then
+            echo "::notice::No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update WEC schedule data"
+          git fetch origin main
+          git rebase origin/main || {
+            echo "::error::Failed to rebase onto origin/main"
+            exit 1
+          }
+          if ! git push origin HEAD:main; then
+            git fetch origin main
+            git rebase origin/main || {
+              echo "::error::Failed to rebase onto origin/main for retry"
+              exit 1
+            }
+            git push origin HEAD:main || {
+              echo "::error::Failed to push scraped data after retry"
+              exit 1
+            }
+          fi
