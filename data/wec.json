@@ -1,0 +1,134 @@
+{
+  "imola": {
+    "April 17th": {
+      "Free Practice 1": "04:15 AM",
+      "Free Practice 2": "09:15 AM"
+    },
+    "April 18th": {
+      "Free Practice 3": "04:30 AM",
+      "Qualifying - LMGT3": "08:30 AM",
+      "Hyperpole - LMGT3": "08:50 AM",
+      "Qualifying - HYPERCAR": "09:10 AM",
+      "Hyperpole - HYPERCAR": "09:30 AM"
+    },
+    "April 19th": {
+      "Race": "07:00 AM"
+    }
+  },
+  "spa": {
+    "May 7th": {
+      "Free Practice 1": "05:00 AM",
+      "Free Practice 2": "09:40 AM"
+    },
+    "May 8th": {
+      "Free Practice 3": "04:10 AM",
+      "Qualifying - LMGT3": "08:30 AM",
+      "Hyperpole - LMGT3": "08:55 AM",
+      "Qualifying - HYPERCAR": "09:20 AM",
+      "Hyperpole - HYPERCAR": "09:45 AM"
+    },
+    "May 9th": {
+      "Race": "08:00 AM"
+    }
+  },
+  "le_mans": {
+    "June 10th": {
+      "Free Practice 1": "08:00 AM",
+      "Qualifying - LMP2 & LMGT3": "12:45 PM",
+      "Qualifying - HYPERCAR": "01:30 PM",
+      "Free Practice 2": "04:00 PM"
+    },
+    "June 11th": {
+      "Free Practice 3": "08:45 AM",
+      "Hyperpole 1 - LMP2 & LMGT3": "02:00 PM",
+      "Hyperpole 2 - LMP2 & LMGT3": "02:35 PM",
+      "Hyperpole 1 - HYPERCAR": "03:05 PM",
+      "Hyperpole 2 - HYPERCAR": "03:40 PM",
+      "Free Practice 4": "05:00 PM"
+    },
+    "June 13th": {
+      "Warm-up": "06:00 AM",
+      "Race": "10:00 AM"
+    }
+  },
+  "brazil": {
+    "July 10th": {
+      "Free Practice 1": "05:00 AM",
+      "Free Practice 2": "09:50 AM"
+    },
+    "July 11th": {
+      "Free Practice 3": "04:10 AM",
+      "Qualifying - LMGT3": "08:30 AM",
+      "Hyperpole - LMGT3": "08:50 AM",
+      "Qualifying - HYPERCAR": "09:25 AM",
+      "Hyperpole - HYPERCAR": "09:45 AM"
+    },
+    "July 12th": {
+      "Race": "05:30 AM"
+    }
+  },
+  "cota": {
+    "September 4th": {
+      "Free Practice 1": "TBC",
+      "Free Practice 2": "TBC"
+    },
+    "September 5th": {
+      "Free Practice 3": "TBC",
+      "Qualifying - LMGT3": "TBC",
+      "Hyperpole - LMGT3": "TBC",
+      "Qualifying - HYPERCAR": "TBC",
+      "Hyperpole - HYPERCAR": "TBC"
+    },
+    "September 6th": {
+      "Race": "TBC"
+    }
+  },
+  "fuji": {
+    "September 25th": {
+      "Free Practice 1": "TBC",
+      "Free Practice 2": "TBC"
+    },
+    "September 26th": {
+      "Free Practice 3": "TBC",
+      "Qualifying - LMGT3": "TBC",
+      "Hyperpole - LMGT3": "TBC",
+      "Qualifying - HYPERCAR": "TBC",
+      "Hyperpole - HYPERCAR": "TBC"
+    },
+    "September 27th": {
+      "Race": "TBC"
+    }
+  },
+  "qatar": {
+    "October 22nd": {
+      "Free Practice 1": "TBC",
+      "Free Practice 2": "TBC"
+    },
+    "October 23rd": {
+      "Free Practice 3": "TBC",
+      "Qualifying - LMGT3": "TBC",
+      "Hyperpole - LMGT3": "TBC",
+      "Qualifying - HYPERCAR": "TBC",
+      "Hyperpole - HYPERCAR": "TBC"
+    },
+    "October 24th": {
+      "Race": "TBC"
+    }
+  },
+  "bahrain": {
+    "November 5th": {
+      "Free Practice 1": "TBC",
+      "Free Practice 2": "TBC"
+    },
+    "November 6th": {
+      "Free Practice 3": "TBC",
+      "Qualifying - LMGT3": "TBC",
+      "Hyperpole - LMGT3": "TBC",
+      "Qualifying - HYPERCAR": "TBC",
+      "Hyperpole - HYPERCAR": "TBC"
+    },
+    "November 7th": {
+      "Race": "TBC"
+    }
+  }
+}
