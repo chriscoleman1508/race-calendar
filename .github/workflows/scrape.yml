@@ -33,6 +33,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/wec.json
-          git pull
-          git commit -m "Update WEC schedule data" || echo "No changes to commit"
-          git push -f origin master
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update WEC schedule data"
+          git pull --rebase origin main
+          git push origin HEAD:main
