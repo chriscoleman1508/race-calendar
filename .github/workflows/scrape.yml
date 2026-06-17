@@ -30,7 +30,7 @@ jobs:
           playwright install chromium --with-deps
 
       - name: Run scraper
-        run: python wec_scraper.py
+        run: python Scrapers/wec_scraper.py
 
       - name: Commit updated data
         run: |
