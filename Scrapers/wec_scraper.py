@@ -16,8 +16,8 @@ RACES = {
     "bahrain": "https://www.fiawec.com/en/race/bapco-energies-8-hours-of-bahrain-2026",
 }
 
-def scrape_sessions(race_url):
-    headers = {"User-Agent": "Mozilla/5.0"}
+def scrape_wec_sessions(race_url):
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"}
     response = requests.get(race_url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     for key, url in RACES.items():
         print(f"Scraping {key}...")
         try:
-            all_races[key] = scrape_sessions(url)
+            all_races[key] = scrape_wec_sessions(url)
         except Exception as e:
             print(f"Failed on {key}: {e}")
 

@@ -1,13 +1,9 @@
-name: Scrape WEC Schedule
+name: Scrape Race Schedules
 
 on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
-
-concurrency:
-  group: scrape-wec-schedule
-  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -25,36 +21,24 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Run scraper
+      - name: Run WEC scraper
         run: python Scrapers/wec_scraper.py
+
+      - name: Run F1 scraper
+        run: python Scrapers/f1_scraper.py
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-
-          git add Website/data/wec.json
+          git add Website/data/wec.json Website/data/f1.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-
-          git commit -m "Update WEC schedule data"
-
-          echo "--- Before fetch ---"
-          git log --oneline -3
-
+          git commit -m "Update race schedule data"
           git fetch origin main
-
-          echo "--- Origin main log ---"
-          git log --oneline -3 origin/main
-
           git rebase origin/main
-
-          echo "--- After rebase ---"
-          git log --oneline -3
-
           git push origin HEAD:main

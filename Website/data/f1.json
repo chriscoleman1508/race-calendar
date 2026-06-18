@@ -1,0 +1,354 @@
+{
+  "albert_park": {
+    "name": "Australian Grand Prix",
+    "sessions": {
+      "2026-03-06": {
+        "Free Practice 1": 1772760600,
+        "Free Practice 2": 1772773200
+      },
+      "2026-03-07": {
+        "Free Practice 3": 1772847000,
+        "Qualifying": 1772859600
+      },
+      "2026-03-08": {
+        "Race": 1772942400
+      }
+    }
+  },
+  "shanghai": {
+    "name": "Chinese Grand Prix",
+    "sessions": {
+      "2026-03-13": {
+        "Free Practice 1": 1773372600,
+        "Sprint Qualifying": 1773387000
+      },
+      "2026-03-14": {
+        "Sprint Race": 1773457200,
+        "Qualifying": 1773471600
+      },
+      "2026-03-15": {
+        "Race": 1773558000
+      }
+    }
+  },
+  "suzuka": {
+    "name": "Japanese Grand Prix",
+    "sessions": {
+      "2026-03-27": {
+        "Free Practice 1": 1774578600,
+        "Free Practice 2": 1774591200
+      },
+      "2026-03-28": {
+        "Free Practice 3": 1774665000,
+        "Qualifying": 1774677600
+      },
+      "2026-03-29": {
+        "Race": 1774760400
+      }
+    }
+  },
+  "miami": {
+    "name": "Miami Grand Prix",
+    "sessions": {
+      "2026-05-01": {
+        "Free Practice 1": 1777651200,
+        "Sprint Qualifying": 1777667400
+      },
+      "2026-05-02": {
+        "Sprint Race": 1777737600,
+        "Qualifying": 1777752000
+      },
+      "2026-05-03": {
+        "Race": 1777838400
+      }
+    }
+  },
+  "villeneuve": {
+    "name": "Canadian Grand Prix",
+    "sessions": {
+      "2026-05-22": {
+        "Free Practice 1": 1779467400,
+        "Sprint Qualifying": 1779481800
+      },
+      "2026-05-23": {
+        "Sprint Race": 1779552000,
+        "Qualifying": 1779566400
+      },
+      "2026-05-24": {
+        "Race": 1779652800
+      }
+    }
+  },
+  "monaco": {
+    "name": "Monaco Grand Prix",
+    "sessions": {
+      "2026-06-05": {
+        "Free Practice 1": 1780659000,
+        "Free Practice 2": 1780671600
+      },
+      "2026-06-06": {
+        "Free Practice 3": 1780741800,
+        "Qualifying": 1780754400
+      },
+      "2026-06-07": {
+        "Race": 1780837200
+      }
+    }
+  },
+  "catalunya": {
+    "name": "Barcelona Grand Prix",
+    "sessions": {
+      "2026-06-12": {
+        "Free Practice 1": 1781263800,
+        "Free Practice 2": 1781276400
+      },
+      "2026-06-13": {
+        "Free Practice 3": 1781346600,
+        "Qualifying": 1781359200
+      },
+      "2026-06-14": {
+        "Race": 1781442000
+      }
+    }
+  },
+  "red_bull_ring": {
+    "name": "Austrian Grand Prix",
+    "sessions": {
+      "2026-06-26": {
+        "Free Practice 1": 1782473400,
+        "Free Practice 2": 1782486000
+      },
+      "2026-06-27": {
+        "Free Practice 3": 1782556200,
+        "Qualifying": 1782568800
+      },
+      "2026-06-28": {
+        "Race": 1782651600
+      }
+    }
+  },
+  "silverstone": {
+    "name": "British Grand Prix",
+    "sessions": {
+      "2026-07-03": {
+        "Free Practice 1": 1783078200,
+        "Sprint Qualifying": 1783092600
+      },
+      "2026-07-04": {
+        "Sprint Race": 1783162800,
+        "Qualifying": 1783177200
+      },
+      "2026-07-05": {
+        "Race": 1783260000
+      }
+    }
+  },
+  "spa": {
+    "name": "Belgian Grand Prix",
+    "sessions": {
+      "2026-07-17": {
+        "Free Practice 1": 1784287800,
+        "Free Practice 2": 1784300400
+      },
+      "2026-07-18": {
+        "Free Practice 3": 1784370600,
+        "Qualifying": 1784383200
+      },
+      "2026-07-19": {
+        "Race": 1784466000
+      }
+    }
+  },
+  "hungaroring": {
+    "name": "Hungarian Grand Prix",
+    "sessions": {
+      "2026-07-24": {
+        "Free Practice 1": 1784892600,
+        "Free Practice 2": 1784905200
+      },
+      "2026-07-25": {
+        "Free Practice 3": 1784975400,
+        "Qualifying": 1784988000
+      },
+      "2026-07-26": {
+        "Race": 1785070800
+      }
+    }
+  },
+  "zandvoort": {
+    "name": "Dutch Grand Prix",
+    "sessions": {
+      "2026-08-21": {
+        "Free Practice 1": 1787308200,
+        "Sprint Qualifying": 1787322600
+      },
+      "2026-08-22": {
+        "Sprint Race": 1787392800,
+        "Qualifying": 1787407200
+      },
+      "2026-08-23": {
+        "Race": 1787490000
+      }
+    }
+  },
+  "monza": {
+    "name": "Italian Grand Prix",
+    "sessions": {
+      "2026-09-04": {
+        "Free Practice 1": 1788517800,
+        "Free Practice 2": 1788530400
+      },
+      "2026-09-05": {
+        "Free Practice 3": 1788604200,
+        "Qualifying": 1788616800
+      },
+      "2026-09-06": {
+        "Race": 1788699600
+      }
+    }
+  },
+  "madring": {
+    "name": "Spanish Grand Prix",
+    "sessions": {
+      "2026-09-11": {
+        "Free Practice 1": 1789126200,
+        "Free Practice 2": 1789138800
+      },
+      "2026-09-12": {
+        "Free Practice 3": 1789209000,
+        "Qualifying": 1789221600
+      },
+      "2026-09-13": {
+        "Race": 1789304400
+      }
+    }
+  },
+  "baku": {
+    "name": "Azerbaijan Grand Prix",
+    "sessions": {
+      "2026-09-24": {
+        "Free Practice 1": 1790238600,
+        "Free Practice 2": 1790251200
+      },
+      "2026-09-25": {
+        "Free Practice 3": 1790325000,
+        "Qualifying": 1790337600
+      },
+      "2026-09-26": {
+        "Race": 1790420400
+      }
+    }
+  },
+  "marina_bay": {
+    "name": "Singapore Grand Prix",
+    "sessions": {
+      "2026-10-09": {
+        "Free Practice 1": 1791534600,
+        "Sprint Qualifying": 1791549000
+      },
+      "2026-10-10": {
+        "Sprint Race": 1791622800,
+        "Qualifying": 1791637200
+      },
+      "2026-10-11": {
+        "Race": 1791720000
+      }
+    }
+  },
+  "americas": {
+    "name": "United States Grand Prix",
+    "sessions": {
+      "2026-10-23": {
+        "Free Practice 1": 1792776600,
+        "Free Practice 2": 1792789200
+      },
+      "2026-10-24": {
+        "Free Practice 3": 1792863000,
+        "Qualifying": 1792875600
+      },
+      "2026-10-25": {
+        "Race": 1792958400
+      }
+    }
+  },
+  "rodriguez": {
+    "name": "Mexico City Grand Prix",
+    "sessions": {
+      "2026-10-30": {
+        "Free Practice 1": 1793385000,
+        "Free Practice 2": 1793397600
+      },
+      "2026-10-31": {
+        "Free Practice 3": 1793467800,
+        "Qualifying": 1793480400
+      },
+      "2026-11-01": {
+        "Race": 1793563200
+      }
+    }
+  },
+  "interlagos": {
+    "name": "Brazilian Grand Prix",
+    "sessions": {
+      "2026-11-06": {
+        "Free Practice 1": 1793979000,
+        "Free Practice 2": 1793991600
+      },
+      "2026-11-07": {
+        "Free Practice 3": 1794061800,
+        "Qualifying": 1794074400
+      },
+      "2026-11-08": {
+        "Race": 1794157200
+      }
+    }
+  },
+  "vegas": {
+    "name": "Las Vegas Grand Prix",
+    "sessions": {
+      "2026-11-20": {
+        "Free Practice 1": 1795134600,
+        "Free Practice 2": 1795147200
+      },
+      "2026-11-21": {
+        "Free Practice 3": 1795221000,
+        "Qualifying": 1795233600
+      },
+      "2026-11-22": {
+        "Race": 1795320000
+      }
+    }
+  },
+  "losail": {
+    "name": "Qatar Grand Prix",
+    "sessions": {
+      "2026-11-27": {
+        "Free Practice 1": 1795786200,
+        "Free Practice 2": 1795798800
+      },
+      "2026-11-28": {
+        "Free Practice 3": 1795876200,
+        "Qualifying": 1795888800
+      },
+      "2026-11-29": {
+        "Race": 1795968000
+      }
+    }
+  },
+  "yas_marina": {
+    "name": "Abu Dhabi Grand Prix",
+    "sessions": {
+      "2026-12-04": {
+        "Free Practice 1": 1796376600,
+        "Free Practice 2": 1796389200
+      },
+      "2026-12-05": {
+        "Free Practice 3": 1796466600,
+        "Qualifying": 1796479200
+      },
+      "2026-12-06": {
+        "Race": 1796562000
+      }
+    }
+  }
+}
