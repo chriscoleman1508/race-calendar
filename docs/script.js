@@ -102,18 +102,24 @@ function renderSidebar() {
   upcomingList.innerHTML = "";
 
   const now = new Date();
-  const upcoming = allEvents.filter((e) => e.date > now).slice(0, 5);
+  const upcoming = allEvents.filter((e) => e.date > now).slice(0, 8);
 
   for (const event of upcoming) {
     const dateStr = event.date.toLocaleDateString(undefined, {
       month: "short",
       day: "numeric",
     });
+    const timeStr = event.date.toLocaleTimeString(undefined, {
+      hour: "numeric",
+      minute: "2-digit",
+    });
     const name = event.raceName || event.race;
+
     upcomingList.innerHTML += `
             <div class="mini-event">
-                <div class="mini-name">${name}</div>
-                <div class="mini-date">${dateStr}</div>
+                <div class="mini-name">${event.series.toUpperCase()} · ${event.session}</div>
+                <div class="mini-session">${name}</div>
+                <div class="mini-date">${dateStr} at ${timeStr}</div>
             </div>
         `;
   }

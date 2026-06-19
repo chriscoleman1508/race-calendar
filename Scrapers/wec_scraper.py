@@ -59,7 +59,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Failed on {key}: {e}")
 
-    with open("Website/data/wec.json", "w") as f:
+    with open("docs/data/wec.json", "w") as f:
         json.dump(all_races, f, indent=2)
 
-    print("Saved to Website/data/wec.json")
+    print("Saved to docs/data/wec.json")

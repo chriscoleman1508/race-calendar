@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add Website/data/wec.json Website/data/f1.json
+          git add docs/data/wec.json docs/data/f1.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0

@@ -122,6 +122,12 @@ body {
     color: #6b6b6b;
 }
 
+.mini-session {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 1px;
+}
+
 /* ===== MAIN CALENDAR AREA ===== */
 .main-header {
     display: flex;

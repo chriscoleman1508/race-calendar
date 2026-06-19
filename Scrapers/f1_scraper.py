@@ -60,8 +60,8 @@ if __name__ == "__main__":
     print("Fetching F1 schedule...")
     all_races = fetch_f1_schedule()
 
-    os.makedirs("Website/data", exist_ok=True)
-    with open("Website/data/f1.json", "w") as f:
+    os.makedirs("docs/data", exist_ok=True)
+    with open("docs/data/f1.json", "w") as f:
         json.dump(all_races, f, indent=2)
 
-    print("Saved to Website/data/f1.json")
+    print("Saved to docs/data/f1.json")
