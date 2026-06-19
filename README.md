@@ -1,6 +1,6 @@
 # 🏁 Race Calendar
 
-A multi-series motorsport calendar that pulls together race schedules from WEC, F1, and more — all displayed in one clean, dark-themed monthly calendar.
+A multi-series motorsport calendar that pulls together race schedules from WEC, F1, and more — all displayed in one clean, dark-themed monthly calendar. Demo Here: https://chriscoleman1508.github.io/race-calendar/
 
 ![Race Calendar Screenshot](docs/assets/demo.png)
 _Replace this with an actual screenshot or GIF of the calendar in action._
