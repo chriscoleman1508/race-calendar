@@ -7,8 +7,31 @@
     <title>Race Calendar</title>
   </head>
   <body>
-    <h1>Race Calendar</h1>
-    <div id="schedule-container"></div>
+    <div class="app">
+      <div class="sidebar">
+        <div class="sidebar-title">Series</div>
+        <div id="series-list"></div>
+
+        <div class="divider"></div>
+
+        <div class="sidebar-title">Next up</div>
+        <div id="upcoming-list"></div>
+      </div>
+
+      <div class="main">
+        <div class="main-header">
+          <div class="month-title" id="month-title">Loading...</div>
+          <div class="nav-btns">
+            <button id="prev-btn">←</button>
+            <button id="next-btn">→</button>
+          </div>
+        </div>
+
+        <div class="weekdays" id="weekdays"></div>
+        <div class="grid" id="calendar-grid"></div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
