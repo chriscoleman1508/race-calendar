@@ -1,8 +1,0 @@
-- ask claude how to load json into html
-- ask claude to generate a pretty readme
-- develop website to look nice
-- add f1
-- add imsa
-- add elms
-- add motogp
-- consider 1 time events like 24h spa or 24h nurburgring (maybe special events category)
