@@ -8,28 +8,29 @@
   </head>
   <body>
     <div class="app">
-      <div class="sidebar">
-        <div class="sidebar-title">Series</div>
-        <div id="series-list"></div>
-
-        <div class="divider"></div>
-
-        <div class="sidebar-title">Next up</div>
-        <div id="upcoming-list"></div>
-      </div>
-
-      <div class="main">
-        <div class="main-header">
-          <div class="month-title" id="month-title">Loading...</div>
-          <div class="nav-btns">
-            <button id="prev-btn">←</button>
-            <button id="next-btn">→</button>
-          </div>
+      <header class="topbar">
+        <div class="topbar-title">Race Calendar</div>
+        <div class="topbar-nav">
+          <button id="prev-btn">←</button>
+          <div class="month-title" id="month-title"></div>
+          <button id="next-btn">→</button>
         </div>
+      </header>
 
+      <section class="this-week">
+        <div class="section-label">This Week</div>
+        <div class="this-week-cards" id="this-week-cards"></div>
+      </section>
+
+      <section class="calendar-section">
         <div class="weekdays" id="weekdays"></div>
         <div class="grid" id="calendar-grid"></div>
-      </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="section-label">Series</div>
+        <div id="series-list"></div>
+      </aside>
     </div>
 
     <script src="script.js"></script>
