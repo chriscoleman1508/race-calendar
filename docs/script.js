@@ -138,7 +138,9 @@ function renderThisWeek() {
   container.innerHTML = "";
 
   const startOfWeek = new Date(today);
-  startOfWeek.setDate(today.getDate() - today.getDay());
+  const dayOfWeek = today.getDay();
+  const mondayOffset = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
+  startOfWeek.setDate(today.getDate() + mondayOffset);
   startOfWeek.setHours(0, 0, 0, 0);
 
   let foundAny = false;
@@ -155,6 +157,8 @@ function renderThisWeek() {
 
     const isToday = day.toDateString() === today.toDateString();
 
+    const labelIndex = (i + 1) % 7;
+
     for (const raceDay of raceDaysToday) {
       let sessionsHtml = "";
       for (const session of raceDay.sessions) {
@@ -167,7 +171,7 @@ function renderThisWeek() {
 
       container.innerHTML += `
                 <div class="week-card ${isToday ? "today" : ""}">
-                    <div class="week-day-label">${WEEKDAY_LABELS[i]} ${day.getDate()}</div>
+                    <div class="week-day-label">${WEEKDAY_LABELS[labelIndex]} ${day.getDate()}</div>
                     <div class="week-race-name">${raceDay.raceName}</div>
                     ${sessionsHtml}
                 </div>

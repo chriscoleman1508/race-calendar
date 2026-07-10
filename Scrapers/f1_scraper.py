@@ -14,7 +14,10 @@ SESSION_NAMES = {
 }
 
 def fetch_f1_schedule():
-    response = requests.get("https://api.jolpi.ca/ergast/f1/2026/races/")
+    current = datetime.now()
+    date = current.date()
+    year = date.strftime("%Y")
+    response = requests.get("https://api.jolpi.ca/ergast/f1/" + year + "/races/")
     data = response.json()
     races = data["MRData"]["RaceTable"]["Races"]
 
