@@ -69,34 +69,34 @@
   },
   "cota": {
     "September 4th": {
-      "Free Practice 1": "TBC",
-      "Free Practice 2": "TBC"
+      "Free Practice 1": 1788539400,
+      "Free Practice 2": 1788555600
     },
     "September 5th": {
-      "Free Practice 3": "TBC",
-      "Qualifying - LMGT3": "TBC",
-      "Hyperpole - LMGT3": "TBC",
-      "Qualifying - HYPERCAR": "TBC",
-      "Hyperpole - HYPERCAR": "TBC"
+      "Free Practice 3": 1788624000,
+      "Qualifying - LMGT3": 1788638400,
+      "Hyperpole - LMGT3": 1788639600,
+      "Qualifying - HYPERCAR": 1788640800,
+      "Hyperpole - HYPERCAR": 1788642000
     },
     "September 6th": {
-      "Race": "TBC"
+      "Race": 1788717600
     }
   },
   "fuji": {
     "September 25th": {
-      "Free Practice 1": "TBC",
-      "Free Practice 2": "TBC"
+      "Free Practice 1": 1790298900,
+      "Free Practice 2": 1790314200
     },
     "September 26th": {
-      "Free Practice 3": "TBC",
-      "Qualifying - LMGT3": "TBC",
-      "Hyperpole - LMGT3": "TBC",
-      "Qualifying - HYPERCAR": "TBC",
-      "Hyperpole - HYPERCAR": "TBC"
+      "Free Practice 3": 1790383800,
+      "Qualifying - LMGT3": 1790400000,
+      "Hyperpole - LMGT3": 1790401200,
+      "Qualifying - HYPERCAR": 1790402400,
+      "Hyperpole - HYPERCAR": 1790403600
     },
     "September 27th": {
-      "Race": "TBC"
+      "Race": 1790474400
     }
   },
   "qatar": {
